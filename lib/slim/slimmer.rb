@@ -1,3 +1,4 @@
+require 'slim'
 require 'slim/slimmer/version'
 
 module Slim

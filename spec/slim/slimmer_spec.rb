@@ -5,7 +5,14 @@ describe Slim::Slimmer do
     expect(Slim::Slimmer::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'renders slim' do
+    input = <<~END
+              html
+                body
+                  p Hello world
+            END
+
+    output = "<html><body><p>Hello world</p></body></html>"
+    expect(render(input)).to eq(output)
   end
 end
