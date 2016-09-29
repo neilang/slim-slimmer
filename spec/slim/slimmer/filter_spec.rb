@@ -7,12 +7,12 @@ describe Slim::Slimmer::Filter do
     let(:input) do
       <<~END
         body
-          p Hello world
+          div foo bar
       END
     end
 
     context 'enabled' do
-      it { is_expected.to eql "<p>Hello world</p>" }
+      it { is_expected.to eql "<div>foo bar</div>" }
     end
 
     context 'disabled' do
@@ -24,7 +24,7 @@ describe Slim::Slimmer::Filter do
         Slim::Engine.options[:slimmer] = true
       end
 
-      it { is_expected.to eql "<body><p>Hello world</p></body>" }
+      it { is_expected.to eql "<body><div>foo bar</div></body>" }
     end
   end
 
@@ -81,22 +81,22 @@ describe Slim::Slimmer::Filter do
       let(:input) do
         <<~END
           body
-            p foo
+            div foo
         END
       end
 
-      it { is_expected.to eql('<p>foo</p>') }
+      it { is_expected.to eql('<div>foo</div>') }
     end
 
     context 'with attributes' do
       let(:input) do
         <<~END
           body.main
-            p hi!
+            div foo
         END
       end
 
-      it { is_expected.to eql('<body class="main"><p>hi!</p></body>') }
+      it { is_expected.to eql('<body class="main"><div>foo</div></body>') }
     end
   end
 end

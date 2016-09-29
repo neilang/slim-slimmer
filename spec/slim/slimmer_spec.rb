@@ -1,18 +1,15 @@
 require 'spec_helper'
 
 describe Slim::Slimmer do
-  it 'has a version number' do
-    expect(Slim::Slimmer::VERSION).not_to be nil
-  end
+  subject { render(input) }
 
-  it 'renders slimmer slim' do
-    input = <<~END
-              html
-                body
-                  p Hello world
-            END
+  describe 'optional p end tag' do
+    let(:input) do
+      <<~END
+        p foo
+      END
+    end
 
-    output = "<p>Hello world</p>"
-    expect(render(input)).to eq(output)
+    it { is_expected.to eql('<p>foo') }
   end
 end
