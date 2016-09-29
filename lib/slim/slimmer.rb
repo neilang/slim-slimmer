@@ -1,8 +1,10 @@
 require 'slim'
+require 'slim/slimmer/filter'
 require 'slim/slimmer/version'
 
 module Slim
   module Slimmer
-    # Your code goes here...
   end
 end
+
+Slim::Engine.before :Pretty, Slim::Slimmer::Filter
