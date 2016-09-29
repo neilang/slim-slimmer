@@ -1,4 +1,4 @@
-require "slim/slimmer/version"
+require 'slim/slimmer/version'
 
 module Slim
   module Slimmer
