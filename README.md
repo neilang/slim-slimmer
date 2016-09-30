@@ -20,7 +20,7 @@ To this html output:
 
 ```html
 <!DOCTYPE html>
-<title>Example</title
+<title>Example</title>
 <p>Example
 ```
 
