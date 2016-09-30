@@ -40,7 +40,13 @@ And then execute:
 
 ## Usage
 
-You can optionally disable this feature via this configuration:
+For best results it is recommended that you change the output format from `xhtml` to `html` as this removes the end slash in self-closing tags:
+
+```ruby
+Slim::Engine.options[:format] = :html
+```
+
+You can optionally disable the slimmer feature via this configuration:
 
 ```ruby
 Slim::Engine.options[:slimmer] = false
