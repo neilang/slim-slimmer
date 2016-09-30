@@ -1,5 +1,7 @@
 # Slim::Slimmer
 
+[![Build Status](https://travis-ci.org/neilang/slim-slimmer.svg?branch=master)](https://travis-ci.org/neilang/slim-slimmer)
+
 Experimental gem to automatically remove unnecessary html tags from your slim output.
 
 As outlined in this [styleguide](https://google.github.io/styleguide/htmlcssguide.xml?showone=Optional_Tags#Optional_Tags) and the [HTML5 specification](https://html.spec.whatwg.org/multipage/syntax.html#syntax-tag-omission) it is safe to omit certain start or end tags from your code.
