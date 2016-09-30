@@ -6,7 +6,7 @@ As outlined in this [styleguide](https://google.github.io/styleguide/htmlcssguid
 
 This gem adds an extra processing step to convert this Slim code:
 
-```ruby
+```slim
 doctype html
 html
   head
