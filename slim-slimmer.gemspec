@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['neilang']
   spec.email         = ['neilang@gmail.com']
 
-  spec.summary       = 'Slim, on a diet.'
-  spec.description   = 'Slim, on a diet.'
+  spec.summary       = 'Slim, only slimmer!'
+  spec.description   = 'Slim, only slimmer!'
   spec.homepage      = 'https://github.com/neilang/slim-slimmer'
 
   raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.' unless spec.respond_to?(:metadata)
